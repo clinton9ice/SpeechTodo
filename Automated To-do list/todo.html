@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<main>
+  <article>
+
+      <div class="box" id="container">
+
+        <header>
+          <div class="boxTxt">Todo-list</div>
+          <p class="date"> </p>
+        </header>
+    
+    <!--myLists-->
+        <section class="listContainer">
+        <ul class="contents">
+          <li class = "item">
+            <i class="fa fa-trash cancelBtn" onclick = "this.parentElement.style.display ='none';"></i>
+            <span class="content">
+            ${data}
+            </span>
+            </li>
+        </ul>
+      </section>
+      <!----end---->
+      <footer> 
+
+       <div class="footerContainer">
+      <form id="form">
+        <div class="recorder">
+          <i class="fa fa-microphone" id="recorder"></i>
+        </div>
+
+        <input type="text" id="field" autocomplete="off" required placeholder="What's for the day">
+        <input type="submit" value="+" id="submit">
+      </form>
+
+    </div> 
+  </footer>
+      </div>
+
+  </article>
+</main>
+  <script src="script.js"></script>
+</body>
+</html>

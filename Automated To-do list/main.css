@@ -1,0 +1,146 @@
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2b2828;
+  font-family: 'PT Sans', sans-serif;
+}
+
+main article .boxTxt{
+  font-size: 22px;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color:#566583;
+  text-shadow: 2px 0px 10px rgba(31, 29, 48, 0.842);
+  -webkit-text-shadow:2px 0px 10px rgba(31, 29, 48, 0.842);
+}
+main article .box{
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+}
+main article header{
+background-color: rgb(49, 64, 95);
+border-radius: 10px 10px 0 0;
+padding: 20px;
+text-align: center;
+}
+
+ main article .box .listContainer{
+position: relative;
+margin: 0;
+padding: 20px;
+height: 50vh;
+background-color: rgb(248, 255, 253);
+overflow-x: hidden;
+overflow-y: scroll;
+ }
+ ul{
+   position: relative;
+   margin: 0;
+   padding: 0 5px 0;
+
+ }
+ main article .box ul li{
+border-bottom: 1px solid rgba(216, 210, 210, 0.856);
+line-height: 1;
+margin: 0;
+list-style: decimal;
+font-size: 17px;
+letter-spacing: 2px;
+padding: 12px 8px 12px 3px;
+word-break: break-all;
+-moz-user-select: none;
+-webkit-user-select: none;
+user-select: none;
+ }
+ main article .box ul li:nth-child(odd){
+   background-color: rgb(230, 241, 248);
+   border: none;
+ }
+ main article .box ul li .fa-trash{
+   margin: 0 7px 4px 0;
+   cursor: pointer;
+   font-weight: 100;
+ }
+
+ .date{
+   color: rgb(245, 199, 147);
+   background-color: rgba(0, 0, 0, 0.253);
+   font-weight: 300;
+   font-size: 17px;
+ }
+
+
+ /*----form----*/
+main article footer{
+  margin: 0;
+  padding: 10px 5px;
+  border-radius: 0 0 10px 10px; 
+  background-color: rgb(49, 64, 95);
+  width: 100%;
+}
+main article footer .footerContainer form{
+  display: flex;
+  justify-content: center;
+}
+main article .footerContainer input[type="text"]{
+  width: 50%;
+  margin: 0 10px;
+  height: 30px;
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  background: rgb(231, 231, 248);
+  color: rgb(23, 21, 29);
+}
+main article .footerContainer input:focus{
+  outline: none;
+  box-shadow: 0;
+  -webkit-outline: none;
+}
+main article .footerContainer input[type="submit"], .recorder{
+height: 35px;
+width: 35px;
+border-radius: 50%;
+border: none;
+margin: 0;
+background-color: rgb(86, 83, 250);
+color: rgb(229, 236, 241);
+font-weight: 500;
+font-size: 19px;
+cursor: pointer;
+}
+main article .footerContainer .recorder{
+  background-color: rgb(7, 11, 27);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main article .footerContainer input:hover[type="submit"], .recorder:hover{
+color: rgb(250, 130, 50);
+}
+/*-----end-----*/
+@media only screen and (max-width: 600px){
+
+  main article .box{
+    width: 100%;
+    padding: 8px;
+  }
+  main article .footerContainer input[type="text"]{
+    width: 60%;
+  }
+  main article .box ul li{
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+                     
+				}
